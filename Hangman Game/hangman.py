@@ -103,7 +103,7 @@ print(f"Guess the word:{' '.join(display)}")
 lives = 7
 
 while '_' in display and lives>0:
-    guess = input("Guess a letter: ").lower()
+    guess = input("\nGuess a letter: ").lower()
     if guess not in chosen_word:
         lives-=1
         print(stages[lives])
