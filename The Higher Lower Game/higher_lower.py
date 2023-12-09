@@ -49,10 +49,12 @@ def print_data():
     print(vs)
     print(f"Against B: {choice_b}")
 
+
 def reset_choice():
     global choice_a, choice_b, a_followers, b_followers 
     choice_a = choice_b
     a_followers = b_followers
+
 
 def new_choice():
     global choice_b, b_followers 
@@ -60,16 +62,19 @@ def new_choice():
     b_followers = choice_b['follower_count']
     choice_b = format_data(choice_b)
 
+
 def check_duplicate_choice():
     global choice_a, choice_b, a_followers, b_followers 
     while choice_b == choice_a:
         choice_b = new_choice()
         b_followers = choice_b['follower_count']
 
+
 def game_should_continue():
     reset_choice()
     new_choice()
     check_duplicate_choice()
+
 
 def game():
     global play, score, choice_a, choice_b, a_followers, b_followers
