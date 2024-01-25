@@ -30,7 +30,6 @@ while True:
             result.write(arg=f'{guess}', align='center', font=("Cambria", 12, "normal"))
             guessed_states.append(guess)
 
-    
     if score == 50:
         message = Turtle()
         message.hideturtle()
