@@ -42,9 +42,8 @@ while True:
         for state in total_states:
             if state not in guessed_states:
                 states_to_learn.append(state)
-        with open('states_to_learn.csv', mode='w') as file:
-            states_to_learn_str = ', '.join(states_to_learn)
-            file.write(states_to_learn_str)
+        new_data = pd.DataFrame(states_to_learn)
+        new_data.to_csv('states_to_learn.csv')
         break
 
 
