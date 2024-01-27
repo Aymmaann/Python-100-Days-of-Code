@@ -6,7 +6,7 @@ screen = Screen()
 screen.title("Guess the US States")
 screen.setup(width=728, height=490)
 
-image = '/Users/ayman/Desktop/Udemy_python/Day 25/blank_states_img.gif'
+image = '/Users/ayman/Desktop/Udemy_python/Day 25: US States Game/blank_states_img.gif'
 screen.addshape(image)
 turtle.shape(image)
 
@@ -16,7 +16,7 @@ total_states = data['state'].to_list()
 guessed_states = []
 
 while True:
-    guess = screen.textinput(title=f'{score}/50 States Correct', prompt="What's another state's name?").title()
+    guess = screen.textinput(title=f'{score}/50 States Correct', prompt="What's another state's name?\n\n(Type 'quit' to quit the game)").title()
     for state in data['state']:
         if guess == state:
             score += 1
@@ -37,7 +37,7 @@ while True:
         message.write(arg='Congratulations!\nThank you for playing :)', align='center', font=("Cambria", 22, "bold"))
         break
 
-    if guess == 'Exit':
+    if guess == 'Quit':
         states_to_learn = []
         for state in total_states:
             if state not in guessed_states:
