@@ -17,7 +17,7 @@ Welcome to the "Guess the US States" game! This Python program, using the Turtle
 
 
 ## Completion and Exiting
-Once you successfully guess all 50 states, a congratulatory message will appear. If you choose to exit the game prematurely by typing "Exit," the program will generate a CSV file named "states_to_learn.csv." This file lists the states you have yet to guess, offering a learning opportunity for future gameplay.
+Once you successfully guess all 50 states, a congratulatory message will appear. If you choose to exit the game prematurely by typing "Quit," the program will generate a CSV file named "states_to_learn.csv." This file lists the states you have yet to guess, offering a learning opportunity for future gameplay.
 
 
 ## Acknowledgments
